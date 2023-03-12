@@ -1,14 +1,18 @@
+/*
+* Draws two balls moving to oposite corners of the screen
+*/
+
 final color RED = color(255,0,0);
 final color BLUE = color(0,0,255);
 final color WHITE = color(255);
 
-float y1;       //Vertical position of the first ball
-float x1;       //Horizontal position of the first ball
-float y2;       //Vertical position of the second ball
-float x2;       //Horizontal position of the second ball
-float r;        //Radius of the first balls
-float speed_y;  //Vertical speed per frame of the balloon
-float speed_x;  //Horizontal speed per frame of the balloon
+float y1;       // Vertical position of the first ball
+float x1;       // Horizontal position of the first ball
+float y2;       // Vertical position of the second ball
+float x2;       // Horizontal position of the second ball
+float r;        // Radius of the first balls
+float speed_y;  // Vertical speed per frame of the balloon
+float speed_x;  // Horizontal speed per frame of the balloon
 
 void setup(){
   size(500,500,P2D);
@@ -39,16 +43,14 @@ void draw(){
   y2 = y2-speed_y;
   
   //Stops moving the balls if reached horizontal or vertical edge
-  //Ball 1
-  if(y1+r >= height-1){
+  if(y1+r >= height-1){  //Ball 1
     y1 = height - 1 - r; 
   }
   if(x1+r >= width-1){
     x1 = width - 1 - r;
   }
   
-  //Ball 2
-  if(y2-r <= 0){
+  if(y2-r <= 0){  //Ball 2
     y2 = r; 
   }
   if(x2-r <= 0){

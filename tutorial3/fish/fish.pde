@@ -1,3 +1,8 @@
+/*
+* A foot moves down to crush the fish, the fish moves with the mouse but cannot
+* go past the foot
+*/
+
 PImage imgFoot;   // Image of the foot
 PImage imgFish;   // Image of the fish
 float footY;      // Vertical position of the foot
