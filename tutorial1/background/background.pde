@@ -7,7 +7,7 @@ PImage bg;  // Background image
 
 void setup(){
  size(256,256,P2D);
- bg = loadImage("./img.jpg");
+ bg = loadImage("img.jpg");
 }
 
 void draw(){

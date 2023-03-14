@@ -14,11 +14,6 @@ void setup(){
 }
 
 void draw(){
-  background(WHITE);
-  
-  // Draws the rect
-  fill(RED)
-  rect(rectX,200,rectSize,rectSize);
   
   // Resets the position of the rect if it moves out of the canvas
   if(rectX > width){
@@ -26,4 +21,10 @@ void draw(){
   }
   
   rectX += speed;  // Moves the rect
+  
+  background(WHITE);
+ 
+  // Draws the rect
+  fill(RED);
+  rect(rectX,200,rectSize,rectSize);
 }

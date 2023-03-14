@@ -26,14 +26,6 @@ void setup(){
 }
 
 void draw(){
-  background(WHITE);
-  
-  //Draws the balls
-  noStroke();
-  fill(RED);
-  ellipse(x1,y1,r*2,r*2);
-  fill(BLUE);
-  ellipse(x2,y2,r*2,r*2);
   
   //Moves the balls
   x1 = x1+speed_x;
@@ -56,4 +48,13 @@ void draw(){
   if(x2-r <= 0){
     x2 = r;
   }
+  
+  background(WHITE);
+  
+  //Draws the balls
+  noStroke();
+  fill(RED);
+  ellipse(x1,y1,r*2,r*2);
+  fill(BLUE);
+  ellipse(x2,y2,r*2,r*2);
 }

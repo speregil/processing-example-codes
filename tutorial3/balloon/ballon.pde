@@ -24,15 +24,6 @@ void setup(){
 }
 
 void draw(){
-  background(WHITE);
-  
-  //Draws the balloon
-  noStroke();
-  fill(ORANGE);
-  ellipse(x,y,r*2,r*2);
-  stroke(1);
-  line(x,y+r,x,y+r+cord_length);
-  
   //Moves the balloon
   x = x+speed_x;
   y = y+speed_y;
@@ -45,4 +36,13 @@ void draw(){
   if(x+r >= width-1){  // Horizontal edge
     x = width - 1 - r;
   }
+  
+  background(WHITE);
+  
+  //Draws the balloon
+  noStroke();
+  fill(ORANGE);
+  ellipse(x,y,r*2,r*2);
+  stroke(1);
+  line(x,y+r,x,y+r+cord_length);
 }
