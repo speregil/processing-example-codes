@@ -1,5 +1,6 @@
 /**
-* This program draws a bouncing pair of squares that change color when the mouse is inside either of them
+* This program draws a bouncing pair of squares that change color when the
+* mouse is inside either of them
 */
 
 // Color definitions
