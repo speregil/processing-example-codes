@@ -97,7 +97,7 @@ void mousePressed(){
   }
 }
 
-/**, , 
+/**
  Checks if a point is within a circle
 *
 * @param pointX X coordinate of the point
